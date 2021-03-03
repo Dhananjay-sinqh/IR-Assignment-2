@@ -13,9 +13,9 @@ def Ry(ang):              #for rotation along y axis
   return np.matrix([[ m.cos(ang), 0, m.sin(ang)],
                    [ 0           , 1, 0           ],
                    [-m.sin(ang), 0, m.cos(ang)]])
-def Rz(theta):            #for rotation along Z axis
-  return np.matrix([[ m.cos(theta), -m.sin(theta), 0 ],
-                   [ m.sin(theta), m.cos(theta) , 0 ],
+def Rz(ang):            #for rotation along Z axis
+  return np.matrix([[ m.cos(ang), -m.sin(ang), 0 ],
+                   [ m.sin(ang), m.cos(ang) , 0 ],
                    [ 0           , 0            , 1 ]])
 
 Bp = np.matrix([2,3,0])
